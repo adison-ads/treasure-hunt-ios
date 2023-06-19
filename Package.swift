@@ -4,12 +4,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "TreasureHunt",
+    name: "TreasureHuntWebtoon",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "TreasureHunt",
-            targets: ["TreasureHunt"]),
+            name: "TreasureHuntWebtoon",
+            targets: ["TreasureHuntWebtoon"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -20,7 +20,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "TreasureHunt",
-            url: "https://github.com/adison-ads/treasure-hunt-ios/releases/download/v0.11.0/TreasureHunt.zip",
-            checksum: "5d63c903d6c5770e1a7c5a0586b0e84fe62552a99ef11b1f04cf94b10fa07bfe")
+            url: "https://github.com/adison-ads/treasure-hunt-ios/releases/download/v0.11.2/TreasureHuntWebtoon.zip",
+            checksum: "aa1ee9257855c62a40aa16d7277f9cdbc4f6326fd9ecdb63a06b0843e68f59c9")
     ]
 )
