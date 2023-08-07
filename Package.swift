@@ -20,7 +20,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "TreasureHunt",
-            url: "https://github.com/adison-ads/treasure-hunt-ios/releases/download/v0.22.2/TreasureHuntWebtoon.zip",
-            checksum: "8bd80d8893b058f80d93fec99a4cb1dad81fc216fc525fc3e06cb63ba77067f2")
+            url: "https://github.com/adison-ads/treasure-hunt-ios/releases/download/v0.22.4/TreasureHuntWebtoon.zip",
+            checksum: "3ce78724a5b81182c3f62502f62caab922d53612d3c47a3e27d84ff52b3c15ae")
     ]
 )
