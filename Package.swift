@@ -1,4 +1,5 @@
 // swift-tools-version: 5.7
+
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -19,8 +20,8 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
-            name: "TreasureHunt",
-            url: "https://github.com/adison-ads/treasure-hunt-ios/releases/download/0.25.2/TreasureHuntWebtoon.zip",
-            checksum: "a9d4a0941ed47595953b1e0631d82fa0b51d8403038f5dc69a968cd30b0a6eb9")
+            name: "TreasureHuntWebtoon",
+            url: "https://github.com/adison-ads/treasure-hunt-ios/releases/download/0.25.3/TreasureHuntWebtoon.zip",
+            checksum: "c04eb23ba2594bd531cf00da53904120106aa0c7fc46f45fdc9498bd658c7833")
     ]
 )
