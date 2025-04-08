@@ -1,27 +1,33 @@
 // swift-tools-version: 5.7
-
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
+let version = "0.27.0-beta1"
+let checksum = ""
+let baseVersion = "0.11.2-beta1"
+
 let package = Package(
     name: "TreasureHuntWebtoon",
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "TreasureHuntWebtoon",
-            targets: ["TreasureHuntWebtoon"]),
+            targets: ["TreasureHuntWebtoon", "TreasureHuntWebtoonTarget"]),
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
+        .package(
+            url: "https://github.com/adison-ads/adison-offerwall-global-base",
+            exact: Version(stringLiteral: baseVersion)),
     ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "TreasureHuntWebtoon",
-            url: "https://github.com/adison-ads/treasure-hunt-ios/releases/download/0.26.6/TreasureHuntWebtoon.zip",
-            checksum: "f56f12692f01d78ec9ca5d3cf1885a43554a40509ed89c6046297aec628ac92b")
-    ]
-)
+            url: "https://github.com/adison-ads/treasure-hunt-ios/releases/download/\(version)/TreasureHuntWebtoon.zip",
+            checksum: checksum),
+        .target(
+            name: "TreasureHuntWebtoonTarget",
+            dependencies: [
+                .product(name: "AdisonOfferwallGlobalBase", package: "adison-offerwall-global-base"),
+            ],
+            path: "Sources"),
+    ])
