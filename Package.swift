@@ -3,9 +3,9 @@
 
 import PackageDescription
 
-let version = "0.27.0-beta1"
+let version = "1.0.0-beta1"
 let checksum = ""
-let baseVersion = "0.11.2-beta1"
+let baseVersion = "1.1.0"
 
 let package = Package(
     name: "TreasureHuntWebtoon",
