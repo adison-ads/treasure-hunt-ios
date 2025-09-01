@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let version = "1.0.0-beta1"
+let version = "1.0.0"
 let checksum = ""
 let baseVersion = "1.1.0"
 
