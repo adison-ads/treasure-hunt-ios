@@ -6,6 +6,7 @@ import PackageDescription
 let version = "1.0.4"
 let checksum = ""
 let baseVersion = "1.1.0"
+let nativeAdVersion = "1.0.0"
 
 let package = Package(
     name: "TreasureHuntWebtoon",
@@ -18,6 +19,9 @@ let package = Package(
         .package(
             url: "https://github.com/adison-ads/adison-offerwall-global-base",
             exact: Version(stringLiteral: baseVersion)),
+        .package(
+            url: "https://github.com/adison-ads/adison-offerwall-global-native-ad",
+            exact: version(stringLiteral: nativeAdVersion)),
     ],
     targets: [
         .binaryTarget(
@@ -28,6 +32,7 @@ let package = Package(
             name: "TreasureHuntWebtoonTarget",
             dependencies: [
                 .product(name: "AdisonOfferwallGlobalBase", package: "adison-offerwall-global-base"),
+                .product(name: "AdisonOfferwallGlobalNativeAd", package: "adison-offerwall-global-native-ad"),
             ],
             path: "Sources"),
     ])
