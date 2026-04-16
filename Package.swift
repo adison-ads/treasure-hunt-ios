@@ -3,8 +3,8 @@
 
 import PackageDescription
 
-let version = "1.1.0"
-let checksum = "5fd9111aced088ad7a0e2ad434f59a68b13477bff0602ce20821743399e24f77"
+let version = "1.1.2"
+let checksum = "9b3fcd1ea9660ad8a4e82cbdcf6368e92b2de3b524b1f888a0cc08c1d4ec4d36"
 let baseVersion = "1.2.0"
 let nativeAdVersion = "1.0.0"
 
