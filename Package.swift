@@ -3,9 +3,9 @@
 
 import PackageDescription
 
-let version = "1.1.4"
-let checksum = "8bdd87b6c6fdb3c46c7eafd19d2696f4de88e68d58241e1060b696d830725e7d"
-let baseVersion = "1.2.0"
+let version = "1.1.6"
+let checksum = "68d4766305c95039c76b39e92e85b742aa15cfb0490a5d945596a0a81ef8433d"
+let baseVersion = "1.2.2"
 let nativeAdVersion = "1.0.0"
 
 let package = Package(
