@@ -3,10 +3,10 @@
 
 import PackageDescription
 
-let version = "1.1.6"
-let checksum = "68d4766305c95039c76b39e92e85b742aa15cfb0490a5d945596a0a81ef8433d"
-let baseVersion = "1.2.2"
-let nativeAdVersion = "1.0.0"
+let version = "1.1.8"
+let checksum = "a4f120db365491638c3e5e5a07b0fff994da434d0377fa8cccc4717e359c6dcd"
+let baseVersion = "1.2.4"
+let nativeAdVersion = "1.0.2"
 
 let package = Package(
     name: "TreasureHuntWebtoon",
